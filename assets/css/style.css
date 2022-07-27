@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300&display=swap');
 
 body {
     margin: 0;
@@ -50,3 +53,147 @@ nav .active, nav a:hover {
     background-color: #129999;
     color: white;
 }
+
+#banner {
+    background-image: url('../images/img1.jpeg');
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.banner_headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner_options {
+    height: 210px;
+    display: flex;
+}
+
+.banner_headline h1 {
+    color: #ffffff;
+    font-size: 80px;
+    max-height: 300px;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.banner_headline h2 {
+    font-size: 25px;
+    color: #ffffff;
+    text-shadow: 2px 2px 2px #000;
+    margin-top: 20px;
+}
+
+.banner1, .banner2, .banner3{
+    color: antiquewhite;
+    padding: 15px;
+    flex: 1;
+}
+
+.banner1{
+    background-color: #5c8aad;
+
+}
+
+.banner2{
+    background-color: #586fb9;
+}
+
+.banner3{
+    background-color: #686ab8;
+}
+
+.banner_title {
+    font-size: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.banner_desc {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.banner_options a {
+    border: 1px solid #fff;
+    text-decoration: none;
+    color: rgba(245, 239, 231, 0.788);
+    padding: 5px;
+}
+
+#geral {
+    background-color: #9cb4c7;
+    display: flex;
+    justify-content: center;
+}
+
+.widget_title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget_title_text {
+    color: rgb(15, 14, 14);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.widget_body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.widget_title_bar {
+    /* width: 50px; */
+    height: 5px;
+    background-color: #129999;
+    /* padding: 10px; */
+    
+}
+
+#rodape {
+    background-color: #65a9e9;
+    display: flex;
+    justify-content: center;
+    color: #101010;
+    height: 40px;
+    padding-top: 40px;
+}
+
+
+@media (max-width: 800px) {
+    .banner_headline h1 {
+        font-size: 55px;
+        padding: 20px;
+    }
+
+    .banner_headline h2 {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .banner_options{
+        flex-direction: column;
+    }
+
+    #geral {
+        margin-top: 300px;
+        padding: 20px;
+    }
+
+    #rodape {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+} 
